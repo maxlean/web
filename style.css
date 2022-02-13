@@ -6,12 +6,18 @@
 }
 
 body {
-  background-color: #f1efea;
+  background-color: #eefbcc;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
 }
 
 /* HEADER */
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 8px 1px 5px #9b9b9b;
+}
 header {
   background-color: darkslategray;
 }
@@ -47,69 +53,70 @@ header nav ul li a:visited {
   text-decoration: none;
   color: black;
 }
+
 /* FIN HEADER*/
 
 section {
   box-sizing: content-box;
-  width: calc(100vw - 10px);
-  height: calc(100vh - 10px);
+  height: 75vh;
 }
 
-#titulo {
-  display: inline-block;
+.titulo {
+  display: flex;
   background-image: url(image/room.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 30vh;
 }
 
-#cartel {
-  display: block;
-  background-color: #7097bf;
+.cartel {
+  display: flex;
+  background-color: #f9ede3;
   border: 5px solid #d1eea6;
   border-radius: 10px;
-  margin: 50px 25%;
+  margin: auto;
+  padding: 15px;
   text-align: center;
+  box-shadow: 8px 5px 10px;
 }
 
-#cartel p {
+.cartel p {
   font-size: 36px;
-  padding: 40px 0;
   font-weight: bold;
 }
 /*Seccion Acerca de mi*/
 
-#Acerca {
+.Acerca {
+  display: flex;
   background-image: url(image/fondon.jpg);
   height: 65vh;
 }
-section h3 {
+.texto h3 {
   color: white;
-  width: 50%;
   padding: 25px;
   text-align: center;
   font-size: 1.5em;
 }
+
 article.textoAcerca {
   color: #f8eed7;
-  width: 50%;
   padding: 10px 20px;
 }
-#teclado {
-  width: 51%;
-  margin: -250px 1%;
-  float: right;
-  height: 87%;
+.teclado {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
 }
 /*fin seccion Acerca de mi*/
 
 /*redes*/
 
-#redes {
+.redes {
   background-image: url(image/fondored.jpg);
   background-size: cover;
 }
 
-#redes article {
+.redes article {
   text-align: center;
   color: #f1efea;
   text-shadow: 8px 5px 5px black;
@@ -118,10 +125,12 @@ article.textoAcerca {
   width: 50%;
   margin: auto;
 }
-#redes div {
+.redes div {
+  width: 100%;
+  justify-content: center;
 }
-#redes a img {
-  width: 22%;
+.redes a img {
+  width: 23%;
   padding: 0 3%;
   padding-left: 10%;
 }
