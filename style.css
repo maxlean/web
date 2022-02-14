@@ -18,7 +18,9 @@ body {
   margin: auto;
   box-shadow: 8px 1px 5px #9b9b9b;
 }
+
 header {
+  display: flex;
   background-color: darkslategray;
 }
 
@@ -28,13 +30,8 @@ header img {
   margin: 5px 5px 5px 5px;
 }
 
-header nav {
-  float: right;
-}
-
 header nav ul {
   display: flex;
-  align-items: center;
   margin: 5px 5px 5px 5px;
 }
 
@@ -80,7 +77,7 @@ section {
 }
 
 .cartel p {
-  font-size: 36px;
+  font-size: 3vw;
   font-weight: bold;
 }
 /*Seccion Acerca de mi*/
@@ -90,6 +87,10 @@ section {
   background-image: url(image/fondon.jpg);
   height: 65vh;
 }
+
+.texto {
+  height: 600px;
+}
 .texto h3 {
   color: white;
   padding: 25px;
@@ -97,15 +98,16 @@ section {
   font-size: 1.5em;
 }
 
-article.textoAcerca {
+.textoAcerca {
+  width: 100%;
   color: #f8eed7;
   padding: 10px 20px;
+  height: 200px;
+  font-size: 2vw;
 }
 .teclado {
-  display: flex;
-  width: 400px;
-  height: 400px;
-  margin: 50px;
+  max-width: 400px;
+  margin: 100px 10px;
 }
 /*fin seccion Acerca de mi*/
 
@@ -121,13 +123,12 @@ article.textoAcerca {
   color: #f1efea;
   text-shadow: 8px 5px 5px black;
   display: block;
-  font-size: 1.5em;
+  font-size: 3vw;
   width: 50%;
   margin: auto;
 }
 .redes div {
   width: 100%;
-  justify-content: center;
 }
 .redes a img {
   width: 23%;
